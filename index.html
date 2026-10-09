@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musanya - ICT Student</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Musanya</h1>
+  <p>ICT Student | Web Technologies</p>
+  <div class="header-buttons">
+    <button id="theme-btn">🌙 Dark Mode</button>
+    <button id="menu-btn">≡ Menu</button>
+  </div>
+  <nav id="main-nav">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>My name is Musanya. I am an ICT student passionate about technology and web development. I love learning new skills in HTML, CSS and JavaScript and building useful websites.</p>
+    <button id="details-btn">Show Details</button>
+    <div id="more-details" style="display:none;">
+      <p>I am studying at Mulungushi University. My goal is to become a full stack developer and create websites for Zambian schools and businesses.</p>
+    </div>
+  </section>
+
+  <section id="hobbies" class="content-section">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading technology blogs</li>
+      <li>Music and listening to podcasts</li>
+      <li>Coding and building websites</li>
+    </ul>
+    
+  </section>
+
+  <section id="photos" class="content-section">
+    <h2>My Photos</h2>
+    <div class="photo-grid">
+      <figure>
+        <img src="images/photo1.jpg" alt="musanya">
+    
+      </figure>
+    
+        <img src="images/photo2.jpg" alt="musanya">
+        
+      </figure>
+  
+        <img src="images/photo3.jpg" alt="musanya">
+        
+  
+    
+  </section>
+
+  <section id="media" class="content-section">
+    <h2>My Media</h2>
+    <h3>My Video</h3>
+    <video controls style=""width:100%; max-width;500px;">
+      <source src="videos/intro.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <p>This is my short introduction video about my ICT journey.</p>
+
+    <h3>My Audio</h3>
+    <audio controls>
+      <source src="videos/audio.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+    <p>Audio message about my learning plan.</p>
+  </section>
+
+  <section id="schedule" class="content-section">
+    <h2>My learning plan</h2>
+    <table>
+      <tr><th>Day</th><th>Activity</th><th>Time</th></tr>
+      <tr><td>Monday</td><td>ICT251 Class</td><td>09:00 - 11:00</td></tr>
+      <tr><td>Tuesday</td><td>Web Practice</td><td>14:00 - 16:00</td></tr>
+      <tr><td>Wednesday</td><td>Study Group</td><td>10:00 - 12:00</td></tr>
+      <tr><td>Thursday</td><td>Assignment</td><td>09:00 - 12:00</td></tr>
+    </table>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact Me</h2>
+    <p><strong>Browser demonstration only — no message is sent.</strong></p>
+    <form id="contact-form" novalidate>
+      <label>Name: <input type="text" id="name" required></label>
+      <span class="error" id="nameError"></span>
+      <label>Email: <input type="email" id="email" required></label>
+      <span class="error" id="emailError"></span>
+      <label>Message: <textarea id="message" required></textarea></label>
+      <span class="error" id="messageError"></span>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="form-preview" style="display:none;"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Musanya | ICT251 Activity 3</p>
+  <p><a href="https://github.com/mwambamusanya27-dotcom/MYWEB2-ACTIVITY-3" target="_blank">View Source on GitHub</a></p>
+</footer>
+</body>
+</html>
