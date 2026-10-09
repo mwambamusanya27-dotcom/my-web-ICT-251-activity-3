@@ -1,0 +1,47 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;background:#f5f5fa;color:#333}
+header{background:#6b5b95;color:white;text-align:center;padding:20px}
+header h1{font-size:2rem;margin-bottom:5px}
+.header-buttons{display:flex;justify-content:center;gap:15px;margin:10px 0}
+#theme-btn,#menu-btn{background:#7b6fa2;color:white;border:1px solid #fff;padding:8px 16px;border-radius:20px;cursor:pointer}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:15px}
+nav a{background:#7b6fa2;color:white;text-decoration:none;padding:8px 16px;border-radius:20px;font-size:0.9rem}
+
+/* PHOTOS SMALL - NO CAPTIONS */
+.photo-grid{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:12px;margin:15px 0}
+.photo-grid figure{width:100px;text-align:center;margin:0}
+.photo-grid img{width:100px!important;height:100px!important;object-fit:cover;border-radius:10px;border:2px solid #ddd;display:block}
+.gallery-controls{text-align:center;margin-top:20px}
+.gallery-controls button{background:#6b5b95;color:white;border:none;padding:8px 14px;border-radius:5px;cursor:pointer}
+#gallery-image{width:130px;height:85px;object-fit:cover;border-radius:8px;border:2px solid #6b5b95;margin:0 10px;vertical-align:middle}
+
+/* VIDEO SMALL */
+video{width:320px!important;max-width:100%!important;height:auto!important;border-radius:10px!important;border:2px solid #ddd!important;display:block;margin:10px auto}
+audio{width:300px;display:block;margin:10px auto}
+
+.content-section{background:#fefefe;border:1px solid #ddd;border-radius:10px;margin:20px;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+.content-section h2{color:#6b5b95;border-bottom:2px solid #e1d5e7;padding-bottom:5px;margin-bottom:10px}
+table{width:100%;border-collapse:collapse} th,td{border:1px solid #ccc;padding:8px} th{background:#6b5b95;color:white}
+input,textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:5px;margin-top:5px}
+.error{color:red;font-size:13px;min-height:18px;display:block}
+footer{background:#6b5b95;color:white;text-align:center;padding:20px;margin-top:20px}
+footer a{color:#e1d5e7}
+
+/* DARK MODE - FIXED */
+body.dark-theme{background:#121212!important;color:#f0f0f0!important}
+body.dark-theme header{background:#2a2342!important}
+body.dark-theme footer{background:#2a2342!important}
+body.dark-theme.content-section{background:#1e1e1e!important;border-color:#444!important;color:#eee!important}
+body.dark-theme.content-section h2{color:#b39ddb!important}
+
+/* MENU FIXED */
+@media (max-width:768px){
+  nav{display:none;flex-direction:column;align-items:center}
+  nav.open{display:flex!important}
+}
+@media (min-width:769px){
+  #menu-btn{display:none}
+  nav{display:flex!important}
+}
+Paste this in `css/styles.css` and save.
